@@ -145,4 +145,3 @@ Usage:
 ```bash
 python scripts/clean_datasets.py
 ```
-This assumes the repository structure has not changed and that `pandas` is installed.
