@@ -146,3 +146,9 @@ Usage:
 python scripts/clean_datasets.py
 ```
 This assumes the repository structure has not changed and that `pandas` is installed.
+
+## Interactive Exploration
+
+A starter Jupyter notebook is provided in `notebooks/getting_started.ipynb`. It
+shows how to load the raw CSV files, invoke the cleaning helpers, and preview the
+results. Launch Jupyter and open the notebook to run the code yourself.
