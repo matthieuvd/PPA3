@@ -125,3 +125,30 @@ room_name Name of the room as displayed on booking.com
 breakfast_cost Separate breakfast rate displayed on booking.com
 vat_incl Boolean flag indicating if taxes are included in the price_value (VAT =
 Value Added Tax)
+
+## Cleaning and Structuring the Data
+
+A helper script is provided in `scripts/clean_datasets.py` to standardize the datasets and
+combine the daily rate files. The script performs the following steps:
+
+1. **Accommodation Facts** – column names are converted to `snake_case`, numeric fields
+   are coerced to numbers and rows missing a `bookingdotcom_id` are dropped.
+2. **Market OTB** – date columns are parsed to proper `datetime` objects and column
+   names are normalized.
+3. **Rates** – all CSV files in `Data/Rates/` are concatenated into a single file with
+   normalized column names and parsed dates.
+
+Running the script creates a new `Data/clean/` directory containing cleaned CSV files for
+all three datasets.
+
+Usage:
+```bash
+python scripts/clean_datasets.py
+```
+This assumes the repository structure has not changed and that `pandas` is installed.
+
+## Interactive Exploration
+
+A starter Jupyter notebook is provided in `notebooks/getting_started.ipynb`. It
+shows how to load the raw CSV files, invoke the cleaning helpers, and preview the
+results. Launch Jupyter and open the notebook to run the code yourself.
