@@ -145,3 +145,7 @@ Usage:
 ```bash
 python scripts/clean_datasets.py
 ```
+
+Once the data is cleaned, you can move on to `notebooks/analysis.ipynb`. This
+second notebook reads the cleaned CSV files using `pandas.read_csv()` and shows
+basic summaries like the average rate and occupancy per destination.
