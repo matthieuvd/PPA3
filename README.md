@@ -145,15 +145,3 @@ Usage:
 ```bash
 python scripts/clean_datasets.py
 ```
-This assumes the repository structure has not changed and that `pandas` is installed.
-
-## Interactive Exploration
-
-A starter Jupyter notebook is provided in `notebooks/getting_started.ipynb`. It
-demonstrates how to load the raw CSV files, run the cleaning helpers, save the
-cleaned versions, and preview the results. Launch Jupyter from the repository
-root and open the notebook to try the steps yourself.
-
-Once the data is cleaned, you can move on to `notebooks/analysis.ipynb`. This
-second notebook reads the cleaned CSV files using `pandas.read_csv()` and shows
-basic summaries like the average rate and occupancy per destination.
