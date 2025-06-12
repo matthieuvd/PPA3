@@ -145,3 +145,8 @@ Usage:
 ```bash
 python scripts/clean_datasets.py
 ```
+
+For a simple scoring example that combines both metrics, see
+`notebooks/location_score.ipynb`. It calculates an average rate and average
+occupancy for each destination and multiplies them to produce an illustrative
+ranking.
