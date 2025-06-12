@@ -150,5 +150,6 @@ This assumes the repository structure has not changed and that `pandas` is insta
 ## Interactive Exploration
 
 A starter Jupyter notebook is provided in `notebooks/getting_started.ipynb`. It
-shows how to load the raw CSV files, invoke the cleaning helpers, and preview the
-results. Launch Jupyter and open the notebook to run the code yourself.
+demonstrates how to load the raw CSV files, run the cleaning helpers, save the
+cleaned versions, and preview the results. Launch Jupyter from the repository
+root and open the notebook to try the steps yourself.
